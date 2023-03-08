@@ -12,8 +12,11 @@ i=$(cat FILES.txt | head -n $SLURM_ARRAY_TASK_ID | tail -n 1)
 
 name2=$(echo $i | cut -d "." -f 1) #adjust depending on the name of the file
 
-#create a python environment to run red, I previously install all the python packages necessary to run red in this python environment
 source /home/egonza02/scratch/Restore20230217/SOFTWARE/plant-scripts/plant-scripts/Python_for_ENSMBL/bin/activate
+#create a python environment to run red, I previously install all the python packages necessary to run red in this python environment
+#pip install sqlalchemy
+#pip install sqlalchemy_utils
+# pip install pymysql
 
 mkdir $name2
 
