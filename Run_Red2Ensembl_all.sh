@@ -14,11 +14,14 @@ name2=$(echo $i | cut -d "." -f 1) #adjust depending on the name of the file
 
 #I previously created a Python virtual environment called Python_for_ENSMBL like this
 #virtualenv Python_for_ENSMBL
-#then I activated the virtualenv and installed the next packages:
+#then I activated the virtualenv like this 
+#source /home/egonza02/scratch/Restore20230217/SOFTWARE/plant-scripts/plant-scripts/Python_for_ENSMBL/bin/activate 
+#and installed the next packages:
 #pip install sqlalchemy
 #pip install sqlalchemy_utils
 #pip install pymysql
-# And I closed the virtual env with the command deactivate
+#And I closed the virtual env with the next command 
+#deactivate
 
 #I am activating again the virtualenv with the installed packages like this
 source /home/egonza02/scratch/Restore20230217/SOFTWARE/plant-scripts/plant-scripts/Python_for_ENSMBL/bin/activate
