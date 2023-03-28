@@ -12,11 +12,16 @@ i=$(cat FILES.txt | head -n $SLURM_ARRAY_TASK_ID | tail -n 1)
 
 name2=$(echo $i | cut -d "." -f 1) #adjust depending on the name of the file
 
-source /home/egonza02/scratch/Restore20230217/SOFTWARE/plant-scripts/plant-scripts/Python_for_ENSMBL/bin/activate
-#create a python environment to run red, I previously install all the python packages necessary to run red in this python environment
+#I previously created a Python virtual environment called Python_for_ENSMBL like this
+#virtualenv Python_for_ENSMBL
+#then I activated the virtualenv and installed the next packages:
 #pip install sqlalchemy
 #pip install sqlalchemy_utils
-# pip install pymysql
+#pip install pymysql
+# And I closed the virtual env with the command deactivate
+
+#I am activating again the virtualenv with the installed packages like this
+source /home/egonza02/scratch/Restore20230217/SOFTWARE/plant-scripts/plant-scripts/Python_for_ENSMBL/bin/activate
 
 mkdir $name2
 
