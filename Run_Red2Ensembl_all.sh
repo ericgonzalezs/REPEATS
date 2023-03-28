@@ -10,6 +10,8 @@ module load StdEnv/2020 python/3.10.2 bedtools/2.30.0
 
 i=$(cat FILES.txt | head -n $SLURM_ARRAY_TASK_ID | tail -n 1)
 
+#the file FILES.txt  contains the names of the fasta files, one per line
+
 name2=$(echo $i | cut -d "." -f 1) #adjust depending on the name of the file
 
 #I previously created a Python virtual environment called Python_for_ENSMBL like this
