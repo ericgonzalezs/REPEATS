@@ -35,4 +35,4 @@ d.bed" $i $name2
 
 deactivate
 
-bedtools maskfasta  -fi $i -bed "$name2""_Redmasked.bed" -fo "$name2""_RedmaskedHM.fasta" #this is to create a hard masked file with the masked posstions from red
+bedtools maskfasta  -fi $i -bed "$name2""_Redmasked.bed" -fo "$name2""_RedmaskedHM.fasta" #this is to create a hard masked file with the masked possitions from red
