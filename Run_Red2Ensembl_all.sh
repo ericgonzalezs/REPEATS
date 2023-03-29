@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 #SBATCH --account=def-rieseber
 #SBATCH --time=2-0
 #SBATCH --cpus-per-task=10
